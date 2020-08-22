@@ -8,8 +8,12 @@
 
   <body>
     <div class="grid-container">
+
       <header class="header">
         <div class="brand">
+          <button onclick="openMenu()">
+            &#9776;
+          </button>
           <a href="index.html">taiiga</a>
         </div>
         <div class="header-links">
@@ -17,21 +21,87 @@
           <a href="signin.html">Sign in</a>
         </div>
       </header>
-<!--       <aside>
-        Shopping Categories
-      </aside> -->
-      <main class="main">
+
+      <aside class="sidebar">
+        <h3>Shopping Categories</h3>
+        <button class="sidebar-close" onclick="closeMenu()">X</button>
         <ul>
-          <li> Product 1</li>
-          <li> Product 2</li>
-          <li> Product 3</li>
-          <li> Product 4</li>
-          <li> Product 5</li>
+          <li><a href="index.html"></a>Painting</li>
+          <li><a href="index.html"></a>Lithography</li>
         </ul>
+      </aside>
+
+      <main class="main">
+        <div class="content">
+          <ul class="products">
+            <li>
+              <div class="product">
+                <img class="product-image" src="images/d1.jpg" alt="product">
+                <div class="product-name">
+                  <a href="product.html">Anthropométrie</a>
+                </div>
+                <div class="product-maker">Yves Kein</div>
+                <div class="product-price">9000€</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img class="product-image" src="images/d1.jpg" alt="product">
+                <div class="product-name">
+                  <a href="product.html">Anthropométrie</a>
+                </div>
+                <div class="product-maker">Yves Kein</div>
+                <div class="product-price">9000€</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img class="product-image" src="images/d1.jpg" alt="product">
+                <div class="product-name">
+                  <a href="product.html">Anthropométrie</a>
+                </div>
+                <div class="product-maker">Yves Kein</div>
+                <div class="product-price">9000€</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img class="product-image" src="images/d1.jpg" alt="product">
+                <div class="product-name">
+                  <a href="product.html">Anthropométrie</a>
+                </div>
+                <div class="product-maker">Yves Kein</div>
+                <div class="product-price">9000€</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img class="product-image" src="images/d1.jpg" alt="product">
+                <div class="product-name">
+                  <a href="product.html">Anthropométrie</a>
+                </div>
+                <div class="product-maker">Yves Kein</div>
+                <div class="product-price">9000€</div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </main>
+
       <footer class="footer">
         All rights reserved.
       </footer>
+
     </div>
+
+    <script>
+      function openMenu(){
+        document.querySelector(".sidebar").classList.add('open')
+      }
+      function closeMenu(){
+        document.querySelector(".sidebar").classList.remove('open')
+      }
+    </script>
+
   </body>
 </html>
