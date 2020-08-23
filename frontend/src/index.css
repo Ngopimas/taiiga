@@ -35,6 +35,7 @@ a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem;
 }
 .brand button{
  font-size: 3rem;
@@ -43,14 +44,17 @@ a:hover{
  border: none;
  color: #ffffff;
  cursor: pointer;
+ padding: 1rem;
 }
 .brand a{
+  font: 2.5rem sans-serif;
   color: #ffffff;
-  font-size: 2.5rem;
+  letter-spacing: 0.1em;
   font-weight: bold;
 }
 .header-links a{
   color: #ffffff;
+  padding: 1rem;
 }
 .header-links a:hover{
   color: #ff8000;

@@ -5,7 +5,8 @@ export default {
     maker: 'Yves Klein',
     image: '/images/d1.jpg',
     category: 'painting',
-    price: 9000
+    price: 9000,
+    countInStock: 0
   },
   {
     _id: '2',
@@ -13,7 +14,8 @@ export default {
     maker: 'Yves Klein',
     image: '/images/d1.jpg',
     category: 'painting',
-    price: 2000
+    price: 2000,
+    countInStock: 3
   },
   {
     _id: '3',
@@ -21,6 +23,7 @@ export default {
     maker: 'Yves Klein',
     image: '/images/d1.jpg',
     category: 'lithography',
-    price: 150
+    price: 150,
+    countInStock: 10
   }]
 }
