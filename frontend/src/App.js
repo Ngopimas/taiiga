@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import CartScreen from './screens/CartScreen';
+
 
 function App() {
 
@@ -24,8 +26,8 @@ function App() {
             <Link to="/">taiiga</Link>
           </div>
           <div className="header-links">
-            <a href="cart.html">Cart</a>
-            <a href="signin.html">Sign in</a>
+            <a href="/">Cart</a>
+            <a href="/">Sign in</a>
           </div>
         </header>
 
@@ -33,14 +35,15 @@ function App() {
           <h3>Shopping Categories</h3>
           <button className="sidebar-close" onClick={closeMenu}>X</button>
           <ul>
-            <li><a href="index.html">Painting</a></li>
-            <li><a href="index.html">Lithography</a></li>
+            <li><a href="/">Painting</a></li>
+            <li><a href="/">Lithography</a></li>
           </ul>
         </aside>
 
         <main className="main">
           <div className="content">
           <Route path="/product/:id" component={ProductScreen} />
+          <Route path="/cart/:id?" component={CartScreen} />
           <Route path="/" exact={true} component={HomeScreen} />
 
           </div>

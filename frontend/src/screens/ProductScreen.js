@@ -41,9 +41,6 @@ function ProductScreen (props) {
               <b>{product.maker}</b>
             </li>
             <li>
-              Price: <b>{product.price}€</b>
-            </li>
-            <li>
               <b>{product.description}</b>
             </li>
           </ul>
